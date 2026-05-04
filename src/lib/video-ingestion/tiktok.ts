@@ -1,4 +1,4 @@
-import { fetchTikTokApifyClockworks } from './providers/apify-clockworks.ts';
+import { fetchTikTokApifyClockworks } from './providers/apify-clockworks';
 
 export async function fetchTikTokVideo(url: string): Promise<{ buffer: Buffer, mimeType: string }> {
   const provider = process.env.TIKTOK_PROVIDER || 'apify-clockworks';

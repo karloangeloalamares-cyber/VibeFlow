@@ -87,7 +87,14 @@ export default function App() {
         body: formData,
       });
 
-      const data = await res.json();
+      let data;
+      const resText = await res.text();
+      try {
+        data = JSON.parse(resText);
+      } catch (err) {
+        throw new Error(`Server returned non-JSON response (Status ${res.status}): ${resText.substring(0, 100)}...`);
+      }
+
       if (!data.success) {
         const errorCode = data.error?.code;
         if (errorCode === 'TIKTOK_PROVIDER_NOT_CONFIGURED' || errorCode === 'TIKTOK_INGESTION_FAILED') {

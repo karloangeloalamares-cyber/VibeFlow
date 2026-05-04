@@ -1,6 +1,6 @@
 import { GoogleGenAI, Type, Schema } from '@google/genai';
-import { IngestionOptions, GeminiAnalysisResult, GeminiAnalysisSchema } from './types.ts';
-import { fetchTikTokVideo } from './tiktok.ts';
+import { IngestionOptions, GeminiAnalysisResult, GeminiAnalysisSchema } from './types';
+import { fetchTikTokVideo } from './tiktok';
 
 const SYSTEM_PROMPT = `You are a Viral Growth Strategist and short-form video creative director.
 

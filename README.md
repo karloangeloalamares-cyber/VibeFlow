@@ -21,9 +21,9 @@ Content Factory as a Service MVP with TikTok Intelligence video analysis and Gem
    ```bash
    npm install
    ```
-3. Set up environment variables by copying `example.env` to `.env` and adding your real API keys:
+3. Set up environment variables by copying `.env.example` to `.env` and adding your real API keys:
    ```bash
-   cp example.env .env
+   cp .env.example .env
    ```
    *Edit `.env` to include your `GEMINI_API_KEY` and `APIFY_TOKEN`*.
 
