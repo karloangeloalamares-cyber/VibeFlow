@@ -6,7 +6,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import multer from 'multer';
 import { z } from 'zod';
-import { analyzeVideo } from './src/lib/video-ingestion/index.ts';
+import { analyzeVideo } from './src/lib/video-ingestion/index';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
