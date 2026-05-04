@@ -1,5 +1,5 @@
 import { ApifyClient } from 'apify-client';
-import { NormalizedVideoData } from '../types';
+import { NormalizedVideoData } from '../types.js';
 
 export async function fetchTikTokApifyClockworks(url: string, timeoutMs: number = 20000): Promise<NormalizedVideoData> {
   const apifyToken = process.env.APIFY_TOKEN;

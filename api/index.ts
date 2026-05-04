@@ -2,7 +2,7 @@ import dotenv from 'dotenv';
 dotenv.config({ override: true });
 import express from 'express';
 import multer from 'multer';
-import { analyzeVideo } from '../src/lib/video-ingestion/index';
+import { analyzeVideo } from '../src/lib/video-ingestion/index.js';
 
 const app = express();
 
