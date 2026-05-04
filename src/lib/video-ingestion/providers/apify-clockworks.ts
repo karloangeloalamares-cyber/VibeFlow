@@ -1,7 +1,7 @@
 import { ApifyClient } from 'apify-client';
 import { NormalizedVideoData } from '../types';
 
-export async function fetchTikTokApifyClockworks(url: string, timeoutMs: number = 60000): Promise<NormalizedVideoData> {
+export async function fetchTikTokApifyClockworks(url: string, timeoutMs: number = 20000): Promise<NormalizedVideoData> {
   const apifyToken = process.env.APIFY_TOKEN;
   if (!apifyToken) {
     throw new Error('TIKTOK_PROVIDER_NOT_CONFIGURED');
